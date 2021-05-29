@@ -1,1 +1,31 @@
-Hello world
+<html>
+
+<head>
+    <title>Show and hide div with JavaScript</title>
+    <link rel="stylesheet" href="Showhide.css" />
+</head>
+
+<body>
+
+    <p>Click the button </p>
+
+    <p><button onclick="myFunction()">
+            <a href="">Click Me </a></button>
+    </p>
+
+    <div id="myDIV">Hello</div>
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myDIV");
+            if (x.innerHTML == "Hello") {
+                x.innerHTML = "Swapped text!";
+            } else {
+                x.innerHTML = "Hello";
+            }
+        }
+    </script>
+
+</body>
+
+</html>
